@@ -137,7 +137,8 @@ app.get("/snakeSerum", (req, res) => {
   });
 });
 
+const port =process.env.PORT || 8080;
 
-app.listen(3001, () => {
-  console.log("Yey, your server is running on port 3001");
+app.listen(port, () => {
+  console.log("Yey, your server is running on port");
 });
