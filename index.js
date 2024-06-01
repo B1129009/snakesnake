@@ -7,7 +7,6 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  connectionLimit: 10,
   user: "root",
   host: "localhost",
   password: "",
@@ -138,7 +137,7 @@ app.get("/snakeSerum", (req, res) => {
   });
 });
 
-const port =process.env.PORT || 8080;
+const port =process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log("Yey, your server is running on port");
