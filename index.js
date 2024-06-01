@@ -7,6 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
+  connectionLimit: 10,
   user: "root",
   host: "localhost",
   password: "",
